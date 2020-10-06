@@ -11,19 +11,19 @@
 				<p>随着时代的发展，现在的恩宁路美食街的发展更是多元化，除了当地的特色美食，还能感受到外来美食与恩宁路的文化相互融合。</p>
 				<p>越过趟栊门，于满洲窗边小酌一杯咖啡，望着熙熙攘攘的人群走在麻石路的惬意，也不禁放缓了品尝寿喜烧的心态，于平和下渗入美食的深处。</p>
 			</article>
-			<footer>
-				<img src="../assets/image/logo.png" alt="logo">
-			</footer>
+			<common-footer></common-footer>
 		</aside>
 	</div>
 </template>
 
 <script>
 	import point from "@/components/point";
+	import commonFooter from "@/components/gallery/base/commonFooter";
 	export default {
 		name: "entry",
 		components: {
-			point
+			point,
+			commonFooter
 		},
 		data() {
 			return {
@@ -114,16 +114,6 @@
 				 text-indent: 2em;
 				 padding: 4px;
 			 }
-		 }
-	 }
-	 footer{
-		 position: absolute;
-		 right: 20px;
-		 bottom: 10px;
-		 height: 50px;
-		 line-height: 1;
-		 img{
-			max-height: 100%;
 		 }
 	 }
  }
